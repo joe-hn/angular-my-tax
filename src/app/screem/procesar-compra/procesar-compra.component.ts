@@ -30,6 +30,31 @@ export class ProcesarCompraComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+
+    this.modelo = new factura(''
+      , ''
+      , ''
+      , '28/11/2019'
+      , 'Plasticos tonys'
+      , '080119010271068'
+      , '078D7F-BC897C-8A4AAB-A0B240-02DEB6-E5', '000-001-01-00261096'
+      , '0.00'
+      , '0.00'
+      , '0.00'
+      , '0.00'
+      , '0.00'
+      , '313.04'
+      , '0.00'
+      , '46.96'
+      , '0.00'
+      , '0.00'
+      , '360.00'
+      , '0.00'
+      , '360.00'
+      , ''
+      , '');
+
+
     this.compramodelo._id = this.route.snapshot.params.compra;
 
     this.apicompra.GetId(this.compramodelo._id).subscribe(res => {
@@ -47,16 +72,21 @@ export class ProcesarCompraComponent implements OnInit {
   }
 
   onGuardar() {
-    this.modelo.cliente = this.compramodelo.cliente;
-    this.modelo.proyecto = this.compramodelo.proyecto;
+    /*
+        this.modelo.cliente = this.compramodelo.cliente;
+        this.modelo.proyecto = this.compramodelo.proyecto;
+    
+        this.api.Post(this.modelo).subscribe(res => {
+          this.compramodelo.estado = 'procesada';
+    
+          this.apicompra.Patch(this.compramodelo._id, this.compramodelo).subscribe(res => {
+            this.onRegresar();
+          })
+        })
+        */
 
-    this.api.Post(this.modelo).subscribe(res => {
-      this.compramodelo.estado = 'procesada';
+    this.onRegresar();
 
-      this.apicompra.Patch(this.compramodelo._id, this.compramodelo).subscribe(res => {
-        this.onRegresar();
-      })
-    })
   }
 
   onCancelar() {

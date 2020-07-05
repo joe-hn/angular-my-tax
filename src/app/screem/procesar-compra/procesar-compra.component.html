@@ -18,12 +18,14 @@
                                     <input matInput [matDatepicker]="pickerInicio" placeholder="Fecha de factura"
                                         name="fie" #fie="ngModel" [(ngModel)]="dateInicio" required readonly>
                                     <mat-datepicker-toggle matSuffix [for]="pickerInicio"></mat-datepicker-toggle>
+                                    <mat-icon matSuffix>android</mat-icon>
                                     <mat-datepicker #pickerInicio></mat-datepicker>
                                 </mat-form-field>
 
                                 <mat-form-field class="example-full-width">
                                     <mat-label>RTN</mat-label>
                                     <input matInput name="edt" #edt="ngModel" [(ngModel)]="modelo.rtn" required maxlength="250">
+                                    <mat-icon matSuffix>android</mat-icon>
                                     <mat-error *ngIf="edt.touched">
                                         Ingrese el rtn
                                     </mat-error>
@@ -32,6 +34,7 @@
                                 <mat-form-field class="example-full-width">
                                     <mat-label>Número Factura</mat-label>
                                     <input matInput name="edt" #edt="ngModel" [(ngModel)]="modelo.numerofactura" required maxlength="250">
+                                    <mat-icon matSuffix>android</mat-icon>
                                     <mat-error *ngIf="edt.touched">
                                         Ingrese el número de factura
                                     </mat-error>
@@ -40,6 +43,7 @@
                                 <mat-form-field class="example-full-width">
                                     <mat-label>Importe Exento</mat-label>
                                     <input matInput name="edt" #edt="ngModel" [(ngModel)]="modelo.importeexento" required maxlength="250">
+                                    <mat-icon matSuffix>android</mat-icon>
                                     <mat-error *ngIf="edt.touched">
                                         Ingrese el importe exento
                                     </mat-error>
@@ -48,6 +52,7 @@
                                 <mat-form-field class="example-full-width">
                                     <mat-label>Retención 12%</mat-label>
                                     <input matInput name="edt" #edt="ngModel" [(ngModel)]="modelo.retencion12" required maxlength="250">
+                                    <mat-icon matSuffix>android</mat-icon>
                                     <mat-error *ngIf="edt.touched">
                                         Ingrese la retención del 12%
                                     </mat-error>
@@ -56,6 +61,7 @@
                                 <mat-form-field class="example-full-width">
                                     <mat-label>Monto grabado 15%</mat-label>
                                     <input matInput name="edt" #edt="ngModel" [(ngModel)]="modelo.montograbado15" required maxlength="250">
+                                    <mat-icon matSuffix>android</mat-icon>
                                     <mat-error *ngIf="edt.touched">
                                         Ingrese el monto grabado 15%
                                     </mat-error>
@@ -64,6 +70,7 @@
                                 <mat-form-field class="example-full-width">
                                     <mat-label>Total Imppuesto 15%</mat-label>
                                     <input matInput name="edt" #edt="ngModel" [(ngModel)]="modelo.totalimpuesto15" required maxlength="250">
+                                    <mat-icon matSuffix>android</mat-icon>
                                     <mat-error *ngIf="edt.touched">
                                         Ingrese el monto grabado 15%
                                     </mat-error>
@@ -72,6 +79,7 @@
                                 <mat-form-field class="example-full-width">
                                     <mat-label>Total Grabado</mat-label>
                                     <input matInput name="edt" #edt="ngModel" [(ngModel)]="modelo.totalgrabado" required maxlength="250">
+                                    <mat-icon matSuffix>android</mat-icon>
                                     <mat-error *ngIf="edt.touched">
                                         Ingrese el monto grabado 15%
                                     </mat-error>
@@ -80,6 +88,7 @@
                                 <mat-form-field class="example-full-width">
                                     <mat-label>Honorario</mat-label>
                                     <input matInput name="edt" #edt="ngModel" [(ngModel)]="modelo.honorario" required maxlength="250">
+                                    <mat-icon matSuffix>android</mat-icon>
                                     <mat-error *ngIf="edt.touched">
                                         Ingrese el monto grabado 15%
                                     </mat-error>
@@ -92,6 +101,7 @@
                                 <mat-form-field class="example-full-width">
                                     <mat-label>Nombre del comercio</mat-label>
                                     <input matInput name="edt" #edt="ngModel" [(ngModel)]="modelo.empresa" required maxlength="250">
+                                    <mat-icon matSuffix>android</mat-icon>
                                     <mat-error *ngIf="edt.touched">
                                         Ingrese el nombre del comercio 
                                     </mat-error>
@@ -100,6 +110,7 @@
                                 <mat-form-field class="example-full-width">
                                     <mat-label>CAI</mat-label>
                                     <input matInput name="edt" #edt="ngModel" [(ngModel)]="modelo.cai" required maxlength="250">
+                                    <mat-icon matSuffix>android</mat-icon>
                                     <mat-error *ngIf="edt.touched">
                                         Ingrese el CAI
                                     </mat-error>
@@ -108,6 +119,7 @@
                                 <mat-form-field class="example-full-width">
                                     <mat-label>Importe Exonerado</mat-label>
                                     <input matInput name="edt" #edt="ngModel" [(ngModel)]="modelo.importeexonerado" required maxlength="250">
+                                    <mat-icon matSuffix>android</mat-icon>
                                     <mat-error *ngIf="edt.touched">
                                         Ingrese el importe exonerado
                                     </mat-error>
@@ -116,6 +128,7 @@
                                 <mat-form-field class="example-full-width">
                                     <mat-label>Descuento Rebaja</mat-label>
                                     <input matInput name="edt" #edt="ngModel" [(ngModel)]="modelo.descuentorebaja" required maxlength="250">
+                                    <mat-icon matSuffix>android</mat-icon>
                                     <mat-error *ngIf="edt.touched">
                                         Ingrese el descuento rebaja
                                     </mat-error>
@@ -124,6 +137,7 @@
                                 <mat-form-field class="example-full-width">
                                     <mat-label>Retención 1%</mat-label>
                                     <input matInput name="edt" #edt="ngModel" [(ngModel)]="modelo.retencion1" required maxlength="250">
+                                    <mat-icon matSuffix>android</mat-icon>
                                     <mat-error *ngIf="edt.touched">
                                         Ingrese la retención 1%
                                     </mat-error>
@@ -132,6 +146,7 @@
                                 <mat-form-field class="example-full-width">
                                     <mat-label>Monto grabajo 18%</mat-label>
                                     <input matInput name="edt" #edt="ngModel" [(ngModel)]="modelo.montograbado18" required maxlength="250">
+                                    <mat-icon matSuffix>android</mat-icon>
                                     <mat-error *ngIf="edt.touched">
                                         
                                     </mat-error>
@@ -140,6 +155,7 @@
                                 <mat-form-field class="example-full-width">
                                     <mat-label>Total Impuesto 18%</mat-label>
                                     <input matInput name="edt" #edt="ngModel" [(ngModel)]="modelo.totalimpuesto18" required maxlength="250">
+                                    <mat-icon matSuffix>android</mat-icon>
                                     <mat-error *ngIf="edt.touched">
                                         
                                     </mat-error>
@@ -148,6 +164,7 @@
                                 <mat-form-field class="example-full-width">
                                     <mat-label>Monto Total Factura</mat-label>
                                     <input matInput name="edt" #edt="ngModel" [(ngModel)]="modelo.montototalfactura" required maxlength="250">
+                                    <mat-icon matSuffix>android</mat-icon>
                                     <mat-error *ngIf="edt.touched">
                                         
                                     </mat-error>
@@ -156,6 +173,7 @@
                                 <mat-form-field class="example-full-width">
                                     <mat-label>Total Neto Recibo</mat-label>
                                     <input matInput name="edt" #edt="ngModel" [(ngModel)]="modelo.totalnetorecibido" required maxlength="250">
+                                    <mat-icon matSuffix>android</mat-icon>
                                     <mat-error *ngIf="edt.touched">
                                         
                                     </mat-error>
